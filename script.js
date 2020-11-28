@@ -1,11 +1,31 @@
 var cheetos = {
-    "cheeto": {
-        "name": "flaming hot",
-        "path": "1.jpeg"
+    "paulo": {
+        "name": "paulo",
+        "path": "paulo.png"
     },
     "ian": {
         "name": "ian",
         "path": "ian.png"
+    },
+    "zach": {
+        "name": "zach",
+        "path": "zach.png"
+    },
+    "chris": {
+        "name": "chris",
+        "path": "chris.png"
+    },
+    "charlie": {
+        "name": "charlie",
+        "path": "charlie.png"
+    },
+    "ethan": {
+        "name": "ethan",
+        "path": "ethan.png"
+    },
+    "adam": {
+        "name": "adam",
+        "path": "adam.png"
     },
 };
 
