@@ -11,7 +11,6 @@ var cheetos = {
 
 $(document).ready(function() {
     for (var key in cheetos) {
-        console.log(cheetos[key]["path"]);
         imgpath = 'url("cheeto/'+cheetos[key]["path"]+'")';
         var $newCheeto = "<div class='col-2 profile'><div class='picture' style='background-image: "
             +imgpath
@@ -19,14 +18,18 @@ $(document).ready(function() {
             +cheetos[key]["name"]
             +"</div>";
 
-        console.log($newCheeto);
-        // $newCheeto.css('background-image': "'url("+cheetos[key]["path"]+")'");
         $(".row").append($newCheeto);
     };
 
 
     $(".profile").click(function() {
-        $(this).css('background-color','#e37bb9');
+        color = $(this).css('background-color');
+        if (color == "rgb(232, 202, 220)") {
+            $(this).css('background-color','#e37bb9');
+        }
+        else {
+            $(this).css('background-color','#e8cadc');
+        }
     });
 
 });
